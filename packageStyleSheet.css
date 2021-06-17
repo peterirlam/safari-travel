@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #fff2d5;
+  line-height: 1;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+  animation: fadein 1s 0.5s forwards;
+  opacity: 0;
+  color: #fff;
+  z-index: 1;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+header h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+header nav {
+  display: flex;
+  margin-right: -15px;
+}
+
+header nav li {
+  margin: 0 15px;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+  }
+
+  header h2 {
+    margin-bottom: 15px;
+  }
+}
+
+ul,
+nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: #824026;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+h1 {
+  line-height: 1.5em;
+  text-align: center;
+}
+
+h3 {
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.intro {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  animation: fadein 1s 0.5s forwards;
+  opacity: 0;
+  color: #c34b48;
+}
+
+/* Section (Main Background) Styles*/
+section {
+  background-color: #fff2d5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #f3a800;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  width: 200px;
+  height: 130px;
+}
+
+.pricing-header {
+  color: #824026;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* style ul */
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #824026;
+}
+
+/* style li */
+.pricing-features-item {
+  font-weight: 600;
+  /* slightly thicker font */
+  letter-spacing: 1px;
+  /* slightly wider letter spacing */
+  font-size: 12px;
+  line-height: 1.5;
+  /* space out font */
+  padding: 15px 0;
+  /* space out font even more */
+  border-top: 1px solid #f3a800;
+}
+
+/* style last li */
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #f3a800;
+}
+
+/* style the span element */
+.pricing-price {
+  color: #824026;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #f3a800;
+  border-radius: 10px;
+  color: #824026;
+  display: inline-block;
+  /* allows to set a width & height and top & bottom margins/padding are respected */
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: all 200ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #fff2d5;
+}
+
+.pricing-button.is-featured {
+  background-color: #f3a800;
+  color: #fff2d5;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: #fff2d5;
+  /* African color palette */
+  color: #824026;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #f3a800;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
