@@ -43,7 +43,7 @@ section {
   padding: 100px 80px;
 }
 
-/* excluding hero section, strip every other section between white & light yellow bg */
+/* excluding hero section, stripe every other section between white & light yellow bg */
 section:not(.hero):nth-child(even) {
   background-color: #fff2d5;
   /* African color pallette */
